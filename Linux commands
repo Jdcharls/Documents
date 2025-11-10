@@ -1,0 +1,148 @@
+
+Basic File & Directory Commands:
+
+pwd                 # Show current directory
+
+ls                  # List files in current directory
+
+ls -l               # List with details (permissions, size, date)
+
+ls -a               # List all, including hidden files
+
+cd /path/to/dir     # Change directory
+
+mkdir new_folder    # Create new directory
+
+rmdir folder_name   # Remove empty directory
+
+
+ 
+File Operations:
+
+touch file.txt                 # Create empty file
+
+cp file1.txt file2.txt         # Copy file
+
+mv file1.txt /path/to/dir/     # Move file
+
+mv old.txt new.txt             # Rename file
+
+rm file.txt                    # Delete file
+
+rm -r folder/                  # Delete folder and contents
+
+cat file.txt                   # View file content
+
+nano file.txt                  # Edit file (nano editor)
+
+ 
+Permissions & Ownership:
+
+ls -l                          # Show file permissions
+
+chmod 755 file.sh              # Change file permissions
+
+chown user:user file.txt       # Change file owner
+ 
+System Information:
+
+whoami                         # Show current user
+
+uname -a                       # Show system info
+
+df -h                          # Show disk usage
+
+free -h                        # Show memory usage
+
+top                            # Show running processes
+
+htop                           # Better process viewer (if installed)
+
+dduser newuser                 # Add new user
+
+passwd newuser                 # Change user password
+
+su - newuser                   # Switch user
+
+groups                         # Show groups
+
+usermod -aG sudo newuser       # Add user to sudo group
+
+ 
+ 
+Networking:
+
+ifconfig            # Show network interfaces (use `ip a` if not installed)
+
+ping google.com     # Test connectivity
+
+curl ifconfig.me    # Show public IP
+
+ssh user@host       # Connect to remote server
+
+scp file.txt user@host:/path/   # Copy file to remote server
+
+wget http://example.com/file     # Download file
+ 
+Package Management (Ubuntu/Debian):
+
+sudo apt update                  # Update package list
+
+sudo apt upgrade                 # Upgrade packages
+
+sudo apt install package_name    # Install package
+
+sudo apt remove package_name     # Uninstall package
+ 
+Processes & Services:
+
+ps aux | grep process_name       # Find process
+
+kill -9 PID                      # Kill process
+
+systemctl status service         # Check service status
+
+systemctl start service          # Start service
+
+systemctl stop service           # Stop service
+
+systemctl restart service        # Restart service
+
+systemctl enable service         # Enable at boot
+ 
+Disk & Storage:
+
+lsblk                            # List disks
+
+mount /dev/sdb1 /mnt             # Mount drive
+
+umount /mnt                      # Unmount drive
+
+df -h                            # Show mounted disks
+
+du -h --max-depth=1 /path        # Disk usage per folder
+
+ 
+AWS-Specific (CLI):
+
+aws configure                    # Configure AWS CLI
+
+aws s3 ls                        # List S3 buckets
+
+aws s3 mb s3://my-bucket         # Create bucket
+
+aws s3 cp file.txt s3://my-bucket/   # Upload file to S3
+
+aws s3 sync . s3://my-bucket     # Sync folder to S3
+ 
+aws ec2 describe-instances       # List EC2 instances
+
+aws ec2 start-instances --instance-ids i-1234567890abcdef
+
+aws ec2 stop-instances --instance-ids i-1234567890abcdef
+ 
+aws iam list-users               # List IAM users
+
+aws rds describe-db-instances    # List RDS instances
+
+ 
