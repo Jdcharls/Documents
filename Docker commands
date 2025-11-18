@@ -1,0 +1,58 @@
+🚀 Basic Docker Commands
+👉 1. Check Docker Version
+docker --version
+docker version
+
+
+👉 2. Download an Image
+Pull an image from Docker Hub:
+docker pull ubuntu
+
+3. List Images
+docker images
+
+4.Remove an image
+docker rmi <image_id>
+
+5. Run a Container
+docker run <image_name>
+
+Run in interactive terminal:
+docker run -it ubuntu
+
+Run in background:
+docker run -d ubuntu
+
+6. List Containers
+docker ps
+
+All containers:
+docker ps -a
+
+7. Stop a Container
+docker stop <container_id>
+
+8. Start a Container
+docker start <container_id>
+
+9. Remove a Container
+docker rm <container_id>
+
+10. Container Logs
+docker logs <container_id>
+
+11. Execute Command Inside Container
+docker exec -it <container_id> bash
+
+12. Build Image From Dockerfile
+docker build -t myapp .
+
+13. Copy Files
+docker cp <container_id>:/path/in/container /path/in/host
+
+14. View Container Details
+docker inspect <container_id>
+
+15. Prune Unused Data
+docker system prune
+
