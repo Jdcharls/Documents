@@ -22,4 +22,10 @@ datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo d
 DRIVER    VOLUME NAME
 local     data-vol
 datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo docker volume inspect data-vol
-[
+
+ sudo ls /var/lib/docker/volumes/
+sudo ls -lrt /var/lib/docker/volumes/
+docker ps -a
+docker images
+docker images ls
+sudo docker run -d -it --name ubuntu1 --mount source=app_vol,destination=/data /bin/bash
