@@ -1,0 +1,31 @@
+How to create a volume in docker 
+
+datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo docker volume
+[sudo] password for datasirpi: 
+Usage:  docker volume COMMAND
+
+Manage volumes
+
+Commands:
+  create      Create a volume
+  inspect     Display detailed information on one or more volumes
+  ls          List volumes
+  prune       Remove unused local volumes
+  rm          Remove one or more volumes
+
+Run 'docker volume COMMAND --help' for more information on a command.
+datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo docker volume ls
+DRIVER    VOLUME NAME
+datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo docker volume create data-vol
+data-vol
+datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo docker volume ls
+DRIVER    VOLUME NAME
+local     data-vol
+datasirpi@datasirpi-HP-Pavilion-Laptop-14-dv2xxx:~/Simplybyte_calculator$ sudo docker volume inspect data-vol
+
+ sudo ls /var/lib/docker/volumes/
+sudo ls -lrt /var/lib/docker/volumes/
+docker ps -a
+docker images
+docker images ls
+sudo docker run -d -it --name ubuntu1 --mount source=app_vol,destination=/data /bin/bash
