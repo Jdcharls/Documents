@@ -2,27 +2,35 @@ pipeline {
     agent any
 
     stages {
+
         stage('Checkout') {
             steps {
-                git 'https://github.com/Jdcharls/Documents.git'
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: 'main']],
+                    userRemoteConfigs: [[
+                        url: 'https://github.com/Jdcharls/Documents.git',
+                        credentialsId: 'c206c6da-e32a-4feb-88a2-8b5880f9bda0'
+                    ]]
+                ])
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                echo 'Build stage...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                echo 'Test stage...'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
+                echo 'Deploy stage...'
             }
         }
     }
