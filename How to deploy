@@ -1,0 +1,6 @@
+First put cd Downloads
+SSH
+nano crmd-fe-values.yaml
+helm ls -n crmd
+helm upgrade crmd-fe -f crmd-fe-values.yaml -n crmd .
+kubectl  get pod -n crmd
