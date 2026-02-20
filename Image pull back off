@@ -1,0 +1,5 @@
+Feb 20 
+Iam facing the issue 
+Failed to pull image "yapdigital.azurecr.io/transactions-service:dev-20": [rpc error: code = NotFound desc = failed to pull and unpack image "yapdigital.azurecr.io/transactions-service:dev-20": failed to resolve reference "yapdigital.azurecr.io/transactions-service:dev-20": yapdigital.azurecr.io/transactions-service:dev-20: not found, failed to pull and unpack image "yapdigital.azurecr.io/transactions-service:dev-20": failed to resolve reference "yapdigital.azurecr.io/transactions-service:dev-20": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://yapdigital.azurecr.io/oauth2/token?scope=repository%3Atransactions-service%3Apull&service=yapdigital.azurecr.io: 401 Unauthorized]
+Nama enna pananum nah ACR la poitu latest ah yentha image build agiruku nu pakanum aporom antha tag number ahh values.yaml la podanum aprom 
+Aprom Agro cd la poitu sync pananum
