@@ -1,0 +1,4 @@
+Step 1 9200 nu irrunthuchi azure la poitu opensearch search vanthu entha machine la run agitu iruuku nu pathu atha copy pananum
+Step 2 vauld la antha IP secret ahh add pananum 
+Step 3 argo cd secret ahh delete pananum apo dhan yentha secret ahh add panirukom atha agro cd edukum 
+Step 4 Application pod ahh delete pananum
