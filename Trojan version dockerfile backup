@@ -1,0 +1,8 @@
+FROM nginx:alpine
+ 
+ARGDIST_PATH="dist/"
+ 
+COPY$DIST_PATH/blackswan-frontend /usr/share/nginx/html/
+ 
+COPY blackswan.conf /etc/nginx/conf.d/default.conf
+ 
