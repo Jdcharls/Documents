@@ -1,0 +1,5 @@
+Step 1 : Go to IAP and go to proxy and click valutD
+step 2 : Which service we want to add the ENV 
+step 3 : Go and check entrypoint.sh
+step 4 : Go to dockerfile and add this commands 
+Step 5 : COPY entrypoint.sh /app/entrypoint.sh
