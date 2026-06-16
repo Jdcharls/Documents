@@ -1,0 +1,6 @@
+step 1 : Dev la irrunthu values.yaml la podanum
+Step 2 : dev nu irrukura place lam prod nu podanum
+step 3 : Prod ku ENV developers kudupanga
+Step 4 : ArgoCD helm podanum
+Step 5 : Nama be la hostname la poitu pakanum 
+Step 5 : Kong lam correct ahh irruka nu check pananum
