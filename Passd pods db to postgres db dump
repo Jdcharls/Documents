@@ -1,0 +1,6 @@
+Step 1 : We have to grep the pods |grep postgress
+Step 2 : kubectl cp pass-d/pass-d-postgresql-0:/tmp/pass-d_backup.sql ./pass-d_backup.sql
+This command is used to backup the database into bastion or local
+Step 3 : psql -h keycloak-trojan.ctq5eqck9nph.ap-south-1.rds.amazonaws.com -U postgres -d pass-d_dev -f local_backup.sql
+We want to create the DB in postgress 
+This command is used to copy the database postgress trojan
